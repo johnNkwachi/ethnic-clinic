@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Services - Ethnic Integrative Medical Clinic Ltd</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="services">
+  <div class="app-shell">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand">
+          <span class="brand-mark">&#127973;</span>
+          <div class="brand-text">
+            <span class="brand-name">ETHNIC INTEGRATIVE MEDICAL CLINIC LTD</span>
+            <span class="brand-tagline">Integrative &bull; Natural &bull; Rehabilitation Care</span>
+          </div>
+        </a>
+        <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-drawer">
+          <span class="nav-toggle-icon" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+        </button>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="team.html" class="nav-link">Our Team</a>
+          <a href="appointments.html" class="nav-link nav-cta">Book Appointment</a>
+        </nav>
+      </div>
+    </header>
+    <div class="nav-overlay" id="nav-overlay" aria-hidden="true"></div>
+    <div class="nav-drawer" id="nav-drawer" role="dialog" aria-label="Menu" aria-modal="true" aria-hidden="true">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="team.html" class="nav-link">Our Team</a>
+      <a href="appointments.html" class="nav-link nav-cta">Book Appointment</a>
+    </div>
+
+    <main class="site-main">
+      <div class="container">
+        <h1 class="page-title">Our services</h1>
+        <p class="page-intro">We offer a range of integrative, natural, and rehabilitation services to support your health.</p>
+        <div class="card-grid section">
+          <div class="card">
+            <h2 class="card-title">Integrative care</h2>
+            <p class="card-body">Combining conventional medicine with evidence-based complementary approaches for a holistic plan.</p>
+          </div>
+          <div class="card">
+            <h2 class="card-title">Natural therapies</h2>
+            <p class="card-body">Supporting your body with natural and lifestyle-based interventions where appropriate.</p>
+          </div>
+          <div class="card">
+            <h2 class="card-title">Rehabilitation</h2>
+            <p class="card-body">Structured programmes to help you recover function and improve quality of life.</p>
+          </div>
+        </div>
+        <p class="lead">Contact us or book an appointment to discuss which services are right for you.</p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <p class="footer-title">Ethnic Integrative Medical Clinic Ltd</p>
+          <p class="footer-text">90 Shyllon Street, Ilupeju Palm Grove, Lagos</p>
+          <p class="footer-text">Tel: <a href="tel:08037208445">08037208445</a> | <a href="tel:08023806149">08023806149</a></p>
+        </div>
+        <div class="footer-links">
+          <a href="privacy.html" class="footer-link">Privacy Policy &amp; Disclaimer</a>
+          <p class="footer-text small">For medical emergencies, call your local emergency number immediately.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="year"></span> Ethnic Integrative Medical Clinic Ltd. All rights reserved.</span>
+      </div>
+    </footer>
+  </div>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="js/app.js"></script>
+  <script src="js/nav.js"></script>
+</body>
+</html>
