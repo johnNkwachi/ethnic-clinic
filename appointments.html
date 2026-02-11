@@ -12,7 +12,7 @@
     <header class="site-header">
       <div class="container header-inner">
         <a href="index.html" class="brand">
-          <span class="brand-mark">&#127973;</span>
+          <img src="https://res.cloudinary.com/da79pzyla/image/upload/v1770825992/ethnic_hospital_image_xejlfg.jpg" alt="Ethnic Integrative Medical Clinic" class="brand-logo" width="44" height="44" />
           <div class="brand-text">
             <span class="brand-name">ETHNIC INTEGRATIVE MEDICAL CLINIC LTD</span>
             <span class="brand-tagline">Integrative &bull; Natural &bull; Rehabilitation Care</span>
@@ -43,10 +43,14 @@
 
     <main class="site-main">
       <div class="container">
-        <h1 class="page-title">Book an appointment</h1>
-        <p class="page-intro">Request an appointment by filling out the form below. We will contact you to confirm.</p>
-        <div class="form-card section">
-          <form id="appointment-form" action="#" method="get">
+        <h1 class="page-title">Book an Appointment</h1>
+        <p class="page-intro">Thank you for choosing <strong>Ethnic Integrative Medical Clinic Ltd.</strong> To book an appointment, please call us or complete the appointment request form below (<a href="#appointment-form">click to fill form</a>).</p>
+        <div class="section">
+          <p class="lead"><strong>Call:</strong> <a href="tel:08037208445">08037208445</a> or <a href="tel:08023806149">08023806149</a></p>
+        </div>
+        <div class="form-card section" id="appointment-form">
+          <h2 class="card-title">Appointment request form</h2>
+          <form id="appointment-form-inner" action="#" method="get">
             <div class="form-row">
               <div class="form-field">
                 <label class="form-label" for="first-name">First name <span>*</span></label>
@@ -69,9 +73,11 @@
               <label class="form-label" for="service">Service of interest</label>
               <select id="service" name="service" class="form-select">
                 <option value="">Select...</option>
-                <option value="integrative">Integrative care</option>
-                <option value="natural">Natural therapies</option>
-                <option value="rehab">Rehabilitation</option>
+                <option value="integrative">Integrative treatments</option>
+                <option value="rehab">Rehabilitation &amp; Physiotherapy</option>
+                <option value="chronic">Chronic disease management</option>
+                <option value="cancer">Cancer support care</option>
+                <option value="nutrition">Nutrition &amp; lifestyle therapy</option>
               </select>
             </div>
             <div class="form-field">
@@ -83,7 +89,21 @@
             </div>
           </form>
         </div>
-        <p class="lead">You can also call us: <a href="tel:08037208445">08037208445</a> or <a href="tel:08023806149">08023806149</a>.</p>
+        <section class="section stack-gap-lg">
+          <h2 class="card-title">What to Expect</h2>
+          <ul class="service-list">
+            <li>Professional consultation</li>
+            <li>Full health assessment</li>
+            <li>Personalized treatment plan</li>
+            <li>Follow-up care and monitoring</li>
+          </ul>
+          <p><strong>NB.</strong> Please bring along any relevant medical reports or test results, list of current medications, and information on previous treatment history.</p>
+        </section>
+        <section class="section">
+          <h2 class="card-title">Working Hours</h2>
+          <p><strong>Monday – Saturday:</strong> From 9:00am</p>
+          <p><strong>Sunday:</strong> By Appointment Only</p>
+        </section>
       </div>
     </main>
 
@@ -108,7 +128,7 @@
   <script src="js/app.js"></script>
   <script src="js/nav.js"></script>
   <script>
-    document.getElementById("appointment-form").addEventListener("submit", function (e) {
+    document.getElementById("appointment-form-inner").addEventListener("submit", function (e) {
       e.preventDefault();
       alert("Thank you. We will contact you to confirm your appointment.");
     });

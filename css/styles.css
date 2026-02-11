@@ -108,11 +108,17 @@ button:focus-visible {
   min-width: 0;
 }
 
-.brand-mark {
+.brand-mark,
+.brand-logo {
   flex-shrink: 0;
   width: 44px;
   height: 44px;
   border-radius: var(--radius-md);
+  display: block;
+  object-fit: cover;
+}
+
+.brand-mark {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -537,6 +543,15 @@ body.nav-open .nav-drawer {
   font-weight: 600;
 }
 
+.hero-card-image {
+  margin-top: 0.75rem;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+  display: block;
+}
+
 .hero-card-body {
   margin-top: 1rem;
   display: grid;
@@ -645,6 +660,18 @@ body.nav-open .nav-drawer {
   font-size: 0.9rem;
   color: var(--color-text-muted);
   line-height: 1.5;
+}
+
+.service-list {
+  margin: 0.5rem 0 0;
+  padding-left: 1.25rem;
+  list-style: disc;
+}
+.service-list li {
+  margin-bottom: 0.35rem;
+}
+.service-list li:last-child {
+  margin-bottom: 0;
 }
 
 .two-column {
