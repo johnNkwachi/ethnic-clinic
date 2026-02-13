@@ -108,18 +108,19 @@ button:focus-visible {
   min-width: 0;
 }
 
-.brand-mark {
+.brand-mark,
+.brand-logo {
   flex-shrink: 0;
   width: 44px;
   height: 44px;
   border-radius: var(--radius-md);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(145deg, #0d9488 0%, #0f766e 100%);
-  color: #fff;
-  font-size: 1.35rem;
-  box-shadow: 0 4px 14px rgba(13, 148, 136, 0.35);
+  display: block;
+  object-fit: cover;
+  box-shadow: 0 4px 14px rgba(13, 148, 136, 0.2);
+}
+
+.brand-logo {
+  background: var(--color-surface);
 }
 
 .brand-text {
@@ -647,6 +648,17 @@ body.nav-open .nav-drawer {
   line-height: 1.5;
 }
 
+.services-list {
+  margin: 0.5rem 0 0;
+  padding-left: 1.25rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+.services-list li {
+  margin-bottom: 0.35rem;
+}
+
 .two-column {
   display: grid;
   grid-template-columns: 1fr;
@@ -829,12 +841,50 @@ body.nav-open .nav-drawer {
   box-shadow: var(--shadow-medium);
 }
 
+.team-card-img {
+  width: 100%;
+  max-width: 220px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  display: block;
+}
+
 .team-card .card-title {
   margin-top: 0.5rem;
 }
 
 .team-card .card-body {
   margin-top: 0.35rem;
+}
+
+/* Service cards with images */
+.card-grid-services {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 480px) {
+  .card-grid-services {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
+.service-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.service-card-img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  display: block;
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+}
+
+.service-card-content {
+  padding: 1.25rem;
 }
 
 /* ========== Footer ========== */
