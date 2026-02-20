@@ -26,7 +26,7 @@
         <nav class="main-nav" aria-label="Main navigation">
           <a href="index.html" class="nav-link">Home</a>
           <a href="about.html" class="nav-link">About</a>
-          <a href="services.html" class="nav-link">Services</a>
+          <a href="services.html" class="nav-link active">Services</a>
           <a href="team.html" class="nav-link">Our Team</a>
           <a href="appointments.html" class="nav-link nav-cta">Book Appointment</a>
         </nav>
@@ -36,45 +36,55 @@
     <div class="nav-drawer" id="nav-drawer" role="dialog" aria-label="Menu" aria-modal="true" aria-hidden="true">
       <a href="index.html" class="nav-link">Home</a>
       <a href="about.html" class="nav-link">About</a>
-      <a href="services.html" class="nav-link">Services</a>
+      <a href="services.html" class="nav-link active">Services</a>
       <a href="team.html" class="nav-link">Our Team</a>
       <a href="appointments.html" class="nav-link nav-cta">Book Appointment</a>
     </div>
 
     <main class="site-main">
       <div class="container">
-        <h1 class="page-title">Our services</h1>
-        <p class="page-intro">Our services are delivered by trained and experienced practitioners in integrative and natural medicine. We serve patients of all ages with compassion, integrity, and respect.</p>
+        <h1 class="page-title animate-on-scroll">Our services</h1>
+        <p class="page-intro animate-on-scroll animate-delay-1">Our services are delivered by trained and experienced practitioners in integrative and natural medicine. We serve patients of all ages with compassion, integrity, and respect.</p>
 
-        <section class="section">
-          <h2 class="section-title">Integrative treatments</h2>
+        <section class="section" id="naturopathy">
+          <h2 class="section-title animate-on-scroll">Integrative treatments</h2>
           <div class="card-grid card-grid-services">
-            <div class="card service-card">
-              <img src="https://images.pexels.com/photos/4113891/pexels-photo-4113891.jpeg?auto=compress&amp;cs=tinysrgb&w=600" alt="Fresh herbs and natural ingredients used in naturopathy to support your body’s healing" class="service-card-img" width="600" height="360" loading="lazy" />
+            <div class="card service-card animate-on-scroll animate-delay-1">
+              <div class="service-card-img-wrap">
+                <img src="images/naturopathy-herbs.png" alt="Naturopathy: dried herbs, seeds and botanicals for natural healing" class="service-card-img" width="600" height="360" loading="lazy" />
+              </div>
               <div class="service-card-content"><h3 class="card-title">Naturopathy</h3><p class="card-body">Natural approaches to support your body’s healing.</p></div>
             </div>
-            <div class="card service-card">
-              <img src="https://images.pexels.com/photos/7615457/pexels-photo-7615457.jpeg?auto=compress&amp;cs=tinysrgb&w=600" alt="Plant-based medicines and herbal preparations used in evidence-based phytotherapy" class="service-card-img" width="600" height="360" loading="lazy" />
+            <div class="card service-card animate-on-scroll animate-delay-2" id="phytotherapy">
+              <div class="service-card-img-wrap">
+                <img src="images/phytotherapy-herbs.png" alt="Phytotherapy: dried herbs, oils and traditional tools for plant-based medicine" class="service-card-img" width="600" height="360" loading="lazy" />
+              </div>
               <div class="service-card-content"><h3 class="card-title">Phytotherapy (Plant-Based Medicine)</h3><p class="card-body">Evidence-based use of plant medicines.</p></div>
             </div>
-            <div class="card service-card">
-              <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&q=80" alt="Acupuncture treatment in progress: traditional and modern needling for pain and wellness" class="service-card-img" width="600" height="360" loading="lazy" />
+            <div class="card service-card animate-on-scroll animate-delay-3" id="acupuncture">
+              <div class="service-card-img-wrap">
+                <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&fit=crop" alt="Acupuncture: practitioner in consultation with patient" class="service-card-img" width="600" height="360" loading="lazy" />
+              </div>
               <div class="service-card-content"><h3 class="card-title">Acupuncture</h3><p class="card-body">Traditional and modern acupuncture for pain and wellness.</p></div>
             </div>
-            <div class="card service-card">
-              <img src="https://images.pexels.com/photos/7615453/pexels-photo-7615453.jpeg?auto=compress&amp;cs=tinysrgb&w=600" alt="Natural remedies and herbal preparations for individualized homeopathic treatment" class="service-card-img" width="600" height="360" loading="lazy" />
+            <div class="card service-card animate-on-scroll animate-delay-4" id="homeopathy">
+              <div class="service-card-img-wrap">
+                <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&fit=crop" alt="Homeopathy: personalized consultation with practitioner" class="service-card-img" width="600" height="360" loading="lazy" />
+              </div>
               <div class="service-card-content"><h3 class="card-title">Homeopathy</h3><p class="card-body">Individualized homeopathic treatment.</p></div>
             </div>
-            <div class="card service-card">
-              <img src="https://images.pexels.com/photos/4871154/pexels-photo-4871154.jpeg?auto=compress&amp;cs=tinysrgb&w=600" alt="Traditional Chinese medicine herbs and ingredients for assessment and treatment" class="service-card-img" width="600" height="360" loading="lazy" />
+            <div class="card service-card animate-on-scroll animate-delay-5" id="chinese-medicine">
+              <div class="service-card-img-wrap">
+                <img src="images/chinese-medicine-cupping.png" alt="Chinese Medicine: cupping therapy on upper back" class="service-card-img" width="600" height="360" loading="lazy" />
+              </div>
               <div class="service-card-content"><h3 class="card-title">Chinese Medicine</h3><p class="card-body">Traditional Chinese medicine assessment and treatment.</p></div>
             </div>
           </div>
         </section>
 
         <section class="section">
-          <h2 class="section-title">Rehabilitation &amp; physiotherapy</h2>
-          <ul class="services-list">
+          <h2 class="section-title animate-on-scroll">Rehabilitation &amp; physiotherapy</h2>
+          <ul class="services-list animate-on-scroll">
             <li>Stroke recovery and mobility support</li>
             <li>Musculoskeletal therapy</li>
             <li>Chronic pain management</li>
@@ -83,8 +93,8 @@
         </section>
 
         <section class="section">
-          <h2 class="section-title">Chronic disease management</h2>
-          <ul class="services-list">
+          <h2 class="section-title animate-on-scroll">Chronic disease management</h2>
+          <ul class="services-list animate-on-scroll">
             <li>Diabetes</li>
             <li>Cardiovascular conditions (high blood pressure, heart disorders)</li>
             <li>Arthritis and joint diseases</li>
@@ -95,8 +105,8 @@
         </section>
 
         <section class="section">
-          <h2 class="section-title">Cancer support care</h2>
-          <ul class="services-list">
+          <h2 class="section-title animate-on-scroll">Cancer support care</h2>
+          <ul class="services-list animate-on-scroll">
             <li>Immune system strengthening</li>
             <li>Nutritional therapy</li>
             <li>Support to reduce side effects of chemotherapy and radiotherapy</li>
@@ -105,8 +115,8 @@
         </section>
 
         <section class="section">
-          <h2 class="section-title">Nutrition &amp; lifestyle therapy</h2>
-          <ul class="services-list">
+          <h2 class="section-title animate-on-scroll">Nutrition &amp; lifestyle therapy</h2>
+          <ul class="services-list animate-on-scroll">
             <li>Diet and nutritional therapy</li>
             <li>Weight management</li>
             <li>Stress management</li>
@@ -139,5 +149,6 @@
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
   <script src="js/app.js"></script>
   <script src="js/nav.js"></script>
+  <script src="js/animations.js"></script>
 </body>
 </html>

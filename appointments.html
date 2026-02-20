@@ -28,7 +28,7 @@
           <a href="about.html" class="nav-link">About</a>
           <a href="services.html" class="nav-link">Services</a>
           <a href="team.html" class="nav-link">Our Team</a>
-          <a href="appointments.html" class="nav-link nav-cta">Book Appointment</a>
+          <a href="appointments.html" class="nav-link nav-cta active">Book Appointment</a>
         </nav>
       </div>
     </header>
@@ -38,16 +38,16 @@
       <a href="about.html" class="nav-link">About</a>
       <a href="services.html" class="nav-link">Services</a>
       <a href="team.html" class="nav-link">Our Team</a>
-      <a href="appointments.html" class="nav-link nav-cta">Book Appointment</a>
+      <a href="appointments.html" class="nav-link nav-cta active">Book Appointment</a>
     </div>
 
     <main class="site-main">
       <div class="container">
-        <h1 class="page-title">Book an appointment</h1>
-        <p class="page-intro">Thank you for choosing <strong>Ethnic Integrative Medical Clinic Ltd.</strong> To book an appointment, please call <a href="tel:08037208445">08037208445</a> or <a href="tel:08023806149">08023806149</a>, or complete the appointment request form on this page (<a href="#appointment-form-section">click to fill form</a>).</p>
+        <h1 class="page-title animate-on-scroll">Book an appointment</h1>
+        <p class="page-intro animate-on-scroll animate-delay-1">Thank you for choosing <strong>Ethnic Integrative Medical Clinic Ltd.</strong> To book an appointment, please call <a href="tel:08037208445">08037208445</a> or <a href="tel:08023806149">08023806149</a>, or complete the appointment request form on this page (<a href="#appointment-form-section">click to fill form</a>).</p>
 
         <section class="section">
-          <h2 class="section-title">What to expect</h2>
+          <h2 class="section-title animate-on-scroll">What to expect</h2>
           <ul class="services-list">
             <li>Professional consultation</li>
             <li>Full health assessment</li>
@@ -59,10 +59,10 @@
           </div>
         </section>
 
-        <h2 class="section-title">Working hours</h2>
-        <p class="lead"><strong>Monday – Saturday:</strong> From 9:00am<br /><strong>Sunday:</strong> By appointment only</p>
+        <h2 class="section-title animate-on-scroll">Working hours</h2>
+        <p class="lead animate-on-scroll animate-delay-1"><strong>Monday – Saturday:</strong> From 9:00am<br /><strong>Sunday:</strong> By appointment only</p>
 
-        <div class="form-card section" id="appointment-form-section">
+        <div class="form-card section animate-on-scroll" id="appointment-form-section">
           <form id="appointment-form" action="#" method="get">
             <div class="form-row">
               <div class="form-field">
@@ -127,6 +127,7 @@
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
   <script src="js/app.js"></script>
   <script src="js/nav.js"></script>
+  <script src="js/animations.js"></script>
   <script>
     document.getElementById("appointment-form").addEventListener("submit", function (e) {
       e.preventDefault();
