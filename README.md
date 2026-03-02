@@ -1,6 +1,6 @@
-# Ethnic Integrative Medical Clinic Ltd
+# Ethnic Integrative Medical Clinic
 
-Website for **Ethnic Integrative Medical Clinic Ltd** — Integrative, Natural, Rehabilitation Care.
+Website for **Ethnic Integrative Medical Clinic** — Integrative, Natural, Rehabilitation Care.
 
 ## Live site
 

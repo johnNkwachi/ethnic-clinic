@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Book Appointment - Ethnic Integrative Medical Clinic Ltd</title>
+  <title>Book Appointment - Ethnic Integrative Medical Clinic</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#0f172a" />
   <link rel="stylesheet" href="css/styles.css" />
@@ -12,10 +12,11 @@
     <header class="site-header">
       <div class="container header-inner">
         <a href="index.html" class="brand">
-          <img class="brand-logo" src="https://res.cloudinary.com/da79pzyla/image/upload/v1770825992/ethnic_hospital_image_xejlfg.jpg" alt="Ethnic Integrative Medical Clinic Ltd" />
+          <img class="brand-logo" src="https://res.cloudinary.com/da79pzyla/image/upload/v1770825992/ethnic_hospital_image_xejlfg.jpg" alt="Ethnic Integrative Medical Clinic" />
           <div class="brand-text">
-            <span class="brand-name">ETHNIC INTEGRATIVE MEDICAL CLINIC LTD</span>
+            <span class="brand-name">ETHNIC INTEGRATIVE MEDICAL CLINIC</span>
             <span class="brand-tagline">Integrative &bull; Natural &bull; Rehabilitation Care</span>
+            <span class="brand-rc">RC Number: 9249707</span>
           </div>
         </a>
         <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-drawer">
@@ -44,7 +45,7 @@
     <main class="site-main">
       <div class="container">
         <h1 class="page-title animate-on-scroll">Book an appointment</h1>
-        <p class="page-intro animate-on-scroll animate-delay-1">Thank you for choosing <strong>Ethnic Integrative Medical Clinic Ltd.</strong> To book an appointment, please call <a href="tel:08037208445">08037208445</a> or <a href="tel:08023806149">08023806149</a>, or complete the appointment request form on this page (<a href="#appointment-form-section">click to fill form</a>).</p>
+        <p class="page-intro animate-on-scroll animate-delay-1">Thank you for choosing <strong>Ethnic Integrative Medical Clinic.</strong> To book an appointment, please call <a href="tel:08037208445">08037208445</a> or <a href="tel:08023806149">08023806149</a>, or complete the appointment request form on this page (<a href="#appointment-form-section">click to fill form</a>).</p>
 
         <section class="section">
           <h2 class="section-title animate-on-scroll">What to expect</h2>
@@ -63,7 +64,9 @@
         <p class="lead animate-on-scroll animate-delay-1"><strong>Monday – Saturday:</strong> From 9:00am<br /><strong>Sunday:</strong> By appointment only</p>
 
         <div class="form-card section animate-on-scroll" id="appointment-form-section">
-          <form id="appointment-form" action="#" method="get">
+          <!-- Replace YOUR_FORM_ID with your Formspree form ID from https://formspree.io -->
+          <form id="appointment-form" action="https://formspree.io/f/mvzbvqbr" method="POST">
+            <input type="hidden" name="_subject" value="New appointment request - Ethnic Integrative Medical Clinic" />
             <div class="form-row">
               <div class="form-field">
                 <label class="form-label" for="first-name">First name <span>*</span></label>
@@ -104,15 +107,37 @@
           </form>
         </div>
         <p class="lead">You can also call us: <a href="tel:08037208445">08037208445</a> or <a href="tel:08023806149">08023806149</a>.</p>
+
+        <section class="section map-section animate-on-scroll">
+          <h2 class="section-title animate-on-scroll">Our location</h2>
+          <p class="lead animate-on-scroll animate-delay-1">90 Shyllon Street, Ilupeju Palm Grove, Lagos</p>
+          <div class="map-wrap">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.4!2d3.3667!3d6.5500!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8d7a1b1b1b1b%3A0x1b1b1b1b1b1b1b1b!2s90%20Shyllon%20St%2C%20Ilupeju%2C%20Lagos!5e0!3m2!1sen!2sng!4v1700000000000!5m2!1sen!2sng"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Ethnic Integrative Medical Clinic location on Google Maps">
+            </iframe>
+          </div>
+          <p class="map-caption">
+            <a href="https://www.google.com/maps/search/90+Shyllon+Street+Ilupeju+Palm+Grove+Lagos" target="_blank" rel="noopener noreferrer">Get directions in Google Maps &rarr;</a>
+          </p>
+        </section>
       </div>
     </main>
 
     <footer class="site-footer">
       <div class="container footer-inner">
         <div>
-          <p class="footer-title">Ethnic Integrative Medical Clinic Ltd</p>
+          <p class="footer-title">Ethnic Integrative Medical Clinic</p>
           <p class="footer-text">90 Shyllon Street, Ilupeju Palm Grove, Lagos</p>
           <p class="footer-text">Tel: <a href="tel:08037208445">08037208445</a> | <a href="tel:08023806149">08023806149</a></p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/ethnic_clinic?igsh=ZGUzMzM3NWJiOQ==" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Follow us on Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+          </div>
         </div>
         <div class="footer-links">
           <a href="privacy.html" class="footer-link">Privacy Policy &amp; Disclaimer</a>
@@ -120,7 +145,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <span>&copy; <span id="year"></span> Ethnic Integrative Medical Clinic Ltd. All rights reserved.</span>
+        <span>&copy; <span id="year"></span> Ethnic Integrative Medical Clinic. All rights reserved.</span>
       </div>
     </footer>
   </div>
@@ -129,10 +154,41 @@
   <script src="js/nav.js"></script>
   <script src="js/animations.js"></script>
   <script>
-    document.getElementById("appointment-form").addEventListener("submit", function (e) {
-      e.preventDefault();
-      alert("Thank you. We will contact you to confirm your appointment.");
-    });
+    (function () {
+      var form = document.getElementById("appointment-form");
+      var submitBtn = form.querySelector("button[type=submit]");
+      var originalBtnText = submitBtn.textContent;
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        if (form.action.indexOf("YOUR_FORM_ID") !== -1) {
+          alert("Form is not configured yet. Please add your Formspree form ID to the form action in appointments.html (see comment above the form).");
+          return;
+        }
+        submitBtn.disabled = true;
+        submitBtn.textContent = "Sending...";
+        fetch(form.action, {
+          method: "POST",
+          body: new FormData(form),
+          headers: { Accept: "application/json" }
+        })
+          .then(function (r) {
+            if (r.ok) {
+              form.reset();
+              alert("Thank you. Your appointment request has been sent. We will contact you at the email you provided to confirm.");
+            } else {
+              throw new Error("Server returned " + r.status);
+            }
+          })
+          .catch(function () {
+            alert("Something went wrong. Please try again or call us at 08037208445 / 08023806149 to book.");
+          })
+          .finally(function () {
+            submitBtn.disabled = false;
+            submitBtn.textContent = originalBtnText;
+          });
+      });
+    })();
   </script>
 </body>
 </html>

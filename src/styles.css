@@ -97,6 +97,13 @@ a {
   color: var(--color-text-muted);
 }
 
+.brand-rc {
+  font-size: 0.6rem;
+  color: var(--color-text-muted);
+  margin-top: 0.15rem;
+  letter-spacing: 0.05em;
+}
+
 .main-nav {
   display: flex;
   align-items: center;

@@ -14,11 +14,12 @@ export function Layout({ children }: LayoutProps) {
             <span className="brand-mark">🏥</span>
             <div className="brand-text">
               <span className="brand-name">
-                ETHNIC INTEGRATIVE MEDICAL CLINIC LTD
+                ETHNIC INTEGRATIVE MEDICAL CLINIC
               </span>
               <span className="brand-tagline">
                 Integrative • Natural • Rehabilitation Care
               </span>
+              <span className="brand-rc">RC Number: 9249707</span>
             </div>
           </Link>
           <nav className="main-nav">
@@ -54,7 +55,7 @@ export function Layout({ children }: LayoutProps) {
         <div className="container footer-inner">
           <div>
             <p className="footer-title">
-              Ethnic Integrative Medical Clinic Ltd
+              Ethnic Integrative Medical Clinic
             </p>
             <p className="footer-text">
               90 Shyllon Street, Ilupeju Palm Grove, Lagos
@@ -76,7 +77,7 @@ export function Layout({ children }: LayoutProps) {
           </div>
         </div>
         <div className="footer-bottom">
-          <span>© {new Date().getFullYear()} Ethnic Integrative Medical Clinic Ltd. All rights reserved.</span>
+          <span>© {new Date().getFullYear()} Ethnic Integrative Medical Clinic. All rights reserved.</span>
         </div>
       </footer>
     </div>

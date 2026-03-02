@@ -20,7 +20,17 @@
     slides.forEach(function (s, i) {
       s.classList.toggle('active', i === current);
       s.setAttribute('aria-hidden', i !== current);
+      var content = s.querySelector('.carousel-slide-content');
+      if (content) content.classList.remove('slide-animate');
     });
+    var activeSlide = slides[current];
+    var activeContent = activeSlide && activeSlide.querySelector('.carousel-slide-content');
+    if (activeContent) {
+      activeContent.classList.add('slide-animate');
+      setTimeout(function () {
+        activeContent.classList.remove('slide-animate');
+      }, 700);
+    }
     if (prevBtn) prevBtn.setAttribute('aria-label', 'Previous service');
     if (nextBtn) nextBtn.setAttribute('aria-label', 'Next service');
   }
